@@ -1,0 +1,147 @@
+# Analizador de Gastos
+
+Proyecto desarrollado en Python utilizando Pandas para analizar gastos almacenados en un archivo CSV.
+
+El programa genera un reporte con:
+
+- Total gastado.
+- Gastos agrupados por categoría.
+- Categoría con mayor gasto.
+
+---
+
+## Estructura del proyecto
+
+```text
+analizador-gastos/
+├── datos/
+│   └── gastos.csv
+├── reportes/
+│   └── reporte_gastos.txt
+├── src/
+│   └── main.py
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Requisitos
+
+- Python 3.10 o superior
+- Pandas
+
+---
+
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/TU-USUARIO/analizador-gastos.git
+
+cd analizador-gastos
+```
+
+Crear un entorno virtual:
+
+```bash
+python -m venv .venv
+```
+
+Activarlo en Linux/Fedora:
+
+```bash
+source .venv/bin/activate
+```
+
+Instalar dependencias:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Formato del archivo CSV
+
+El archivo debe contener las siguientes columnas:
+
+```csv
+fecha,categoria,monto
+2026-06-01,Comida,15
+2026-06-01,Transporte,8
+2026-06-02,Comida,12
+2026-06-02,Ocio,20
+2026-06-03,Transporte,5
+```
+
+---
+
+## Uso
+
+Ejecutar:
+
+```bash
+python src/main.py datos/gastos.csv
+```
+
+El programa generará:
+
+```text
+reportes/reporte_gastos.txt
+```
+
+---
+
+## Ejemplo de salida
+
+```text
+REPORTE DE GASTOS
+
+Total gastado:
+$60
+
+Categorías de gasto:
+Comida: $27
+Ocio: $20
+Transporte: $13
+
+Categoría con mayor gasto:
+Comida
+```
+
+---
+
+## Manejo de errores
+
+El programa valida:
+
+- Que se proporcione un archivo CSV.
+- Que el archivo exista.
+- Que el CSV contenga las columnas:
+  - fecha
+  - categoria
+  - monto
+
+---
+
+## Tecnologías utilizadas
+
+- Python
+- Pandas
+
+---
+
+## Objetivos de aprendizaje
+
+Este proyecto fue desarrollado para practicar:
+
+- Lectura de archivos CSV.
+- Uso de DataFrames con Pandas.
+- Agrupación y análisis de datos.
+- Funciones en Python.
+- Manejo de errores.
+- Organización básica de proyectos.
+- Uso de Git y GitHub.
