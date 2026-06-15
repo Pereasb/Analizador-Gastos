@@ -39,7 +39,7 @@ analizador-gastos/
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/TU-USUARIO/analizador-gastos.git
+git clone https://github.com/Pereasb/Analizador-Gastos.git
 
 cd analizador-gastos
 ```
